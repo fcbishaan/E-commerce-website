@@ -1,0 +1,163 @@
+/* Base settings for the page */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container for the entire product description page */
+.product-description-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Styling for the product title */
+.product-description-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Container for the main content area, including image and description side by side */
+.product-description-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for the product image */
+.product-description-image {
+    flex-basis: 40%;
+    max-width: 40%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.product-description-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Container for the text description and features */
+.product-description-text, .product-description-features {
+    flex-basis: 60%;
+    max-width: 60%;
+}
+
+/* Styling for the text description */
+.product-description-text {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.8;
+}
+
+/* Styling for the list of features or specifications */
+.product-description-features {
+    margin-top: 20px;
+}
+
+.product-description-features li {
+    margin-bottom: 5px;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+/* Styling for the price and purchase section */
+.product-description-purchase {
+    font-size: 1.5rem;
+    color: #ff4141;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* Button styling for the purchase or add to cart button */
+.product-description-button {
+    display: inline-block;
+    background-color: #ff4141;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.product-description-button:hover {
+    background-color: #e53737;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-description-content {
+        flex-direction: column;
+    }
+
+    .product-description-image, .product-description-text, .product-description-features {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}
+/* Styling for the "Add To Cart" button */
+button {
+    background-color: #007bff; /* Attractive blue */
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+button:hover {
+    background-color: #0056b3;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Styling for the size selection section */
+.productdisplay-right-size > div {
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 5px;
+    border: 2px solid #007bff; /* Matching the button color */
+    color: #007bff;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.productdisplay-right-size > div:hover, .productdisplay-right-size > div.active {
+    background-color: #007bff;
+    color: white;
+}
+/* Container for the main content area, including image and description side by side */
+.product-description-content {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Styling for the product image container */
+.product-description-image {
+    flex-basis: 40%; /* Adjust this value as needed */
+    max-width: 40%; /* Adjust this value as needed */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Container for the text description and features */
+.product-description-text, .product-description-features {
+    flex-basis: 60%; /* Adjust this value as needed */
+    max-width: 60%; /* Adjust this value as needed */
+}
